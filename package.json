@@ -1,5 +1,5 @@
 {
-  "name": "nanojs",
+  "name": "nanots",
   "version": "1.0.0",
   "description": "Una librería minimalista para el manejo eficiente del DOM",
   "main": "./dist/index.js",

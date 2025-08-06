@@ -5,7 +5,7 @@ Una librería minimalista para el manejo eficiente del DOM, inspirada en jQuery 
 ## 📦 Instalación
 
 ```bash
-npm install nanojs
+npm install nanots
 ```
 
 ## 🎯 Características
@@ -23,10 +23,10 @@ npm install nanojs
 
 ```javascript
 // ES6 Modules
-import $n from "nanojs";
+import $n from "nanots";
 
 // CommonJS
-const $n = require("nanojs");
+const $n = require("nanots");
 
 // Uso directo en el navegador (global)
 // La función $n estará disponible globalmente
