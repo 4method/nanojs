@@ -1,0 +1,37 @@
+type NanoElement = Element | HTMLElement;
+type NanoCallback = (el: NanoElement, index: number) => void;
+declare class NanoWrapper {
+    elements: NanoElement[];
+    constructor(elements: NanoElement[]);
+    get length(): number;
+    on(event: string, handler: EventListener): NanoWrapper;
+    addClass(className: string): NanoWrapper;
+    removeClass(className: string): NanoWrapper;
+    attr(name: string, value?: string): string | NanoWrapper;
+    html(content?: string): string | NanoWrapper;
+    css(prop: string, value?: string): string | NanoWrapper;
+    append(element: NanoElement | string): NanoWrapper;
+    each(callback: NanoCallback): NanoWrapper;
+    text(content?: string): string | NanoWrapper;
+    val(value?: string): string | NanoWrapper;
+    remove(): NanoWrapper;
+    empty(): NanoWrapper;
+    prepend(element: NanoElement | string): NanoWrapper;
+    parent(): NanoWrapper;
+    children(): NanoWrapper;
+    find(selector: string): NanoWrapper;
+    first(): NanoWrapper;
+    last(): NanoWrapper;
+    toggleClass(className: string): NanoWrapper;
+    hasClass(className: string): boolean;
+    hide(): NanoWrapper;
+    show(): NanoWrapper;
+    off(event: string, handler?: EventListener): NanoWrapper;
+    trigger(event: string): NanoWrapper;
+    data(key: string, value?: string): string | NanoWrapper;
+    hasAttr(name: string): boolean;
+    filter(selector: string): NanoWrapper;
+    not(selector: string): NanoWrapper;
+}
+declare function $n(input: string | NanoElement | Function): NanoWrapper | void;
+export default $n;

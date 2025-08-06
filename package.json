@@ -1,0 +1,19 @@
+{
+  "name": "@crobf/nano",
+  "version": "1.0.0",
+  "description": "Una librería minimalista para el manejo eficiente del DOM",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build:js": "swc src/index.ts -o dist/index.js --source-maps",
+    "build:types": "tsc",
+    "build": "npm run build:js && npm run build:types"
+  },
+  "author": "CROBF",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/cli": "^0.7.8",
+    "@swc/core": "^1.13.3",
+    "typescript": "^5.9.2"
+  }
+}
