@@ -5,7 +5,7 @@ Una librería minimalista para el manejo eficiente del DOM, inspirada en jQuery 
 ## 📦 Instalación
 
 ```bash
-npm install @crobf/nano
+npm install nanojs
 ```
 
 ## 🎯 Características
@@ -23,10 +23,10 @@ npm install @crobf/nano
 
 ```javascript
 // ES6 Modules
-import $n from "@crobf/nano";
+import $n from "nanojs";
 
 // CommonJS
-const $n = require("@crobf/nano");
+const $n = require("nanojs");
 
 // Uso directo en el navegador (global)
 // La función $n estará disponible globalmente
@@ -258,8 +258,4 @@ ISC
 
 ## 🤝 Contribuir
 
-¡Las contribuciones son bienvenidas! Por favor abre un issue o pull request en nuestro [repositorio de GitHub](https://github.com/CROBF-tech/nanojs).
-
----
-
-Hecho con ❤️ por CROBF
+¡Las contribuciones son bienvenidas! Por favor abre un issue o pull request en nuestro [repositorio de GitHub](https://github.com/4method/nanojs).

@@ -1,5 +1,5 @@
 {
-  "name": "@crobf/nano",
+  "name": "nanojs",
   "version": "1.0.0",
   "description": "Una librería minimalista para el manejo eficiente del DOM",
   "main": "./dist/index.js",
@@ -13,7 +13,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CROBF-tech/nanojs"
+    "url": "https://github.com/4method/nanojs"
   },
   "devDependencies": {
     "@swc/cli": "^0.7.8",
