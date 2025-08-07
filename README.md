@@ -1,4 +1,4 @@
-# 🚀 NanoJS
+# 🚀 nanots
 
 Una librería minimalista para el manejo eficiente del DOM, inspirada en jQuery pero con un enfoque moderno y ligero.
 

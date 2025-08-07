@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NanoJS - Librería minimalista para el DOM</title>
+    <title>nanots - Librería minimalista para el DOM</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -77,14 +77,14 @@
 
 <body class="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen quicksand-regular">
     <!-- Header -->
-    <header class="container mx-auto px-6 py-8">
-        <nav class="flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="text-4xl text-blue-600">Ω</div>
-                <span class="text-xl quicksand-semibold text-gray-800">NanoJS</span>
+    <header class="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        <nav class="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <div class="text-3xl sm:text-4xl text-blue-600">Ω</div>
+                <span class="text-lg sm:text-xl quicksand-semibold text-gray-800">nanots</span>
             </div>
             <a href="https://github.com/4method/nanojs" target="_blank"
-                class="flex items-center space-x-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
+                class="flex items-center space-x-2 bg-gray-800 text-white px-3 sm:px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm sm:text-base">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                         d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
@@ -96,24 +96,24 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-6 py-16 text-center">
+    <section class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
         <div class="max-w-4xl mx-auto">
-            <div class="text-8xl text-blue-600 mb-6">Ω</div>
-            <h1 class="text-6xl quicksand-bold text-gray-800 mb-6">NanoJS</h1>
-            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto quicksand-regular">
+            <div class="text-6xl sm:text-8xl text-blue-600 mb-4 sm:mb-6">Ω</div>
+            <h1 class="text-4xl sm:text-6xl quicksand-bold text-gray-800 mb-4 sm:mb-6">nanots</h1>
+            <p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 max-w-2xl mx-auto quicksand-regular px-4">
                 Una librería minimalista para el manejo eficiente del DOM. Simple,
                 ligera y poderosa.
             </p>
 
-            <div class="flex max-w-fit mx-auto flex-col gap-2 text-center justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+            <div class="flex max-w-fit mx-auto flex-col gap-2 text-center justify-center items-center mb-8 sm:mb-12">
                 <div
-                    class="bg-gray-800 text-white rounded-lg fira-code flex items-center shadow-lg overflow-hidden group">
-                    <div class="flex-1 px-6 py-3">
-                        <span id="npm-command-2" class="text-gray-100 select-all">npm install nanots</span>
+                    class="bg-gray-800 text-white rounded-lg fira-code flex items-center shadow-lg overflow-hidden group w-full max-w-xs sm:max-w-sm">
+                    <div class="flex-1 px-4 sm:px-6 py-3">
+                        <span id="npm-command-2" class="text-gray-100 select-all text-sm sm:text-base">npm install nanots</span>
                     </div>
                     <div class="border-l border-gray-700 group-hover:border-gray-600 transition-colors">
                         <button
-                            class="px-4 py-3 hover:bg-gray-700 transition-colors duration-150 h-full flex items-center"
+                            class="px-3 sm:px-4 py-3 hover:bg-gray-700 transition-colors duration-150 h-full flex items-center"
                             onclick="copyToClipboard('npm-command-2', 'copy-icon-2', 'check-icon-2')">
                             <svg id="copy-icon-2" class="w-4 h-4 text-gray-400 hover:text-white transition-colors"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -134,13 +134,13 @@
     </section>
 
     <!-- Features Section -->
-    <section class="container mx-auto px-6 py-16">
+    <section class="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl quicksand-bold text-center text-gray-800 mb-12">
-                ¿Por qué NanoJS?
+            <h2 class="text-2xl sm:text-3xl quicksand-bold text-center text-gray-800 mb-8 sm:mb-12 px-4">
+                ¿Por qué nanots?
             </h2>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <div class="text-3xl text-blue-600 mb-4">⚡</div>
                     <h3 class="text-xl quicksand-semibold text-gray-800 mb-3">
@@ -178,21 +178,21 @@
     </section>
 
     <!-- Code Comparison Section -->
-    <section class="bg-white py-16">
-        <div class="container mx-auto px-6">
+    <section class="bg-white py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl quicksand-bold text-center text-gray-800 mb-12">
+                <h2 class="text-2xl sm:text-3xl quicksand-bold text-center text-gray-800 mb-8 sm:mb-12 px-4">
                     Mira la diferencia
                 </h2>
 
-                <div class="grid lg:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 sm:gap-8">
                     <!-- JavaScript Vanilla -->
                     <div class="space-y-4">
-                        <h3 class="text-xl quicksand-semibold text-red-600 mb-4">
+                        <h3 class="text-lg sm:text-xl quicksand-semibold text-red-600 mb-4 px-2">
                             ❌ JavaScript Vanilla
                         </h3>
-                        <div class="bg-gray-900 rounded-lg p-6 overflow-x-auto">
-                            <pre class="fira-code-regular text-sm text-gray-300"><code>// Seleccionar elementos y agregar eventos
+                        <div class="bg-gray-900 rounded-lg p-3 sm:p-6 overflow-x-auto">
+                            <pre class="fira-code-regular text-xs sm:text-sm text-gray-300 whitespace-pre-wrap"><code>// Seleccionar elementos y agregar eventos
 const buttons = document.querySelectorAll('.btn');
 buttons.forEach(btn => {
   btn.addEventListener('click', function(e) {
@@ -223,13 +223,13 @@ fetch('/api/data')
                         </div>
                     </div>
 
-                    <!-- NanoJS -->
+                    <!-- nanots -->
                     <div class="space-y-4">
-                        <h3 class="text-xl quicksand-semibold text-green-600 mb-4">
-                            ✅ Con NanoJS
+                        <h3 class="text-lg sm:text-xl quicksand-semibold text-green-600 mb-4 px-2">
+                            ✅ Con nanots
                         </h3>
-                        <div class="bg-gray-900 rounded-lg p-6 overflow-x-auto">
-                            <pre class="fira-code-regular text-sm text-gray-300"><code>// Seleccionar elementos y agregar eventos
+                        <div class="bg-gray-900 rounded-lg p-3 sm:p-6 overflow-x-auto">
+                            <pre class="fira-code-regular text-xs sm:text-sm text-gray-300 whitespace-pre-wrap"><code>// Seleccionar elementos y agregar eventos
 $n('.btn').on('click', function() {
   $n(this)
     .addClass('active')
@@ -244,16 +244,16 @@ fetch('/api/data')
     $n('#container')
       .empty()
       .append(
-        data.map(item => `<div class="item">${item.name}</div>`).join('')
+        data.map(item => `&lt;div&gt;${item.name}&lt;/div&gt;`).join('')
       );
   });</code></pre>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-8">
-                    <p class="text-lg text-gray-700 quicksand-regular">
-                        <span class="quicksand-semibold text-green-600">50% menos código</span>
+                <div class="text-center mt-6 sm:mt-8">
+                    <p class="text-base sm:text-lg text-gray-700 quicksand-regular px-4">
+                        <span class="quicksand-semibold text-green-600">20% menos código</span>
                         para la misma funcionalidad
                     </p>
                 </div>
@@ -262,37 +262,38 @@ fetch('/api/data')
     </section>
 
     <!-- Getting Started Section -->
-    <section class="container mx-auto px-6 py-16">
+    <section class="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl quicksand-bold text-gray-800 mb-8">
+            <h2 class="text-2xl sm:text-3xl quicksand-bold text-gray-800 mb-6 sm:mb-8 px-4">
                 Empezar es súper fácil
             </h2>
 
-            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 mx-2 sm:mx-0">
                 <div class="text-left">
-                    <h3 class="quicksand-semibold text-lg text-gray-700 mb-4">
-                        1. Instala NanoJS
+                    <h3 class="quicksand-semibold text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
+                        1. Instala nanots
                     </h3>
-                    <div class="bg-gray-900 text-white p-4 rounded-lg mb-6 fira-code-regular">
-                        npm install nanojs
+                    <div class="bg-gray-900 text-white p-3 sm:p-4 rounded-lg mb-4 sm:mb-6 fira-code-regular text-xs sm:text-sm overflow-x-auto">
+                        <code class="whitespace-nowrap">npm install nanots</code>
                     </div>
 
-                    <h3 class="quicksand-semibold text-lg text-gray-700 mb-4">
+                    <h3 class="quicksand-semibold text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
                         2. Importa en tu proyecto
                     </h3>
-                    <div class="bg-gray-900 text-white p-4 rounded-lg mb-6 fira-code-regular">
-                        <div class="text-green-400">import</div>
-                        <div class="text-blue-400">$n</div>
-                        <div class="text-green-400">from</div>
-                        <div class="text-yellow-400">'nanojs'</div>
-                        ;
+                    <div class="bg-gray-900 text-white p-3 sm:p-4 rounded-lg mb-4 sm:mb-6 fira-code-regular text-xs sm:text-sm overflow-x-auto">
+                        <div class="whitespace-nowrap">
+                            <span class="text-green-400">import</span>
+                            <span class="text-blue-400"> $n </span>
+                            <span class="text-green-400">from</span>
+                            <span class="text-yellow-400"> 'nanots'</span>;
+                        </div>
                     </div>
 
-                    <h3 class="quicksand-semibold text-lg text-gray-700 mb-4">
+                    <h3 class="quicksand-semibold text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
                         3. ¡Usa la magia!
                     </h3>
-                    <div class="bg-gray-900 text-white p-4 rounded-lg fira-code-regular">
-                        <div>
+                    <div class="bg-gray-900 text-white p-3 sm:p-4 rounded-lg fira-code-regular text-xs sm:text-sm overflow-x-auto">
+                        <div class="whitespace-nowrap">
                             <span class="text-blue-400">$n</span>(<span
                                 class="text-yellow-400">'.mi-elemento'</span>).<span
                                 class="text-green-400">addClass</span>(<span class="text-yellow-400">'activo'</span>);
@@ -301,34 +302,187 @@ fetch('/api/data')
                 </div>
             </div>
 
-            <div class="space-y-4">
+            <div class="space-y-4 px-4">
                 <a href="https://github.com/4method/nanojs" target="_blank"
-                    class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg quicksand-semibold hover:bg-blue-700 transition-colors">
+                    class="inline-block bg-blue-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg quicksand-semibold hover:bg-blue-700 transition-colors text-sm sm:text-base">
                     Ver Documentación Completa
                 </a>
-                <p class="text-sm text-gray-600 quicksand-regular">
+                <p class="text-xs sm:text-sm text-gray-600 quicksand-regular">
                     Código abierto bajo licencia ISC
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Examples Section -->
+    <section class="bg-gray-50 py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl quicksand-bold text-center text-gray-800 mb-8 sm:mb-12 px-4">
+                    Ejemplos Prácticos
+                </h2>
+
+                <div class="grid grid-cols-1 gap-6 sm:gap-8">
+                    
+                    <!-- Ejemplo 1: Formulario Interactivo -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-lg sm:text-xl quicksand-semibold text-gray-800 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">📝</span>
+                            Formulario Interactivo
+                        </h3>
+                        <p class="text-gray-600 quicksand-regular mb-4 text-sm">
+                            Validación en tiempo real y manejo de eventos de formulario
+                        </p>
+                        <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                            <pre class="fira-code-regular text-xs text-gray-300 whitespace-pre-wrap"><code>// Validación en tiempo real
+$n('#email').on('input', function() {
+  const email = $n(this).val();
+  const isValid = /\S+@\S+\.\S+/.test(email);
+  
+  $n(this)
+    .toggleClass('border-red-500', !isValid)
+    .toggleClass('border-green-500', isValid);
+    
+  $n('#submit-btn')
+    .attr('disabled', !isValid)
+    .toggleClass('opacity-50', !isValid);
+});
+
+// Envío del formulario
+$n('#contact-form').on('submit', function(e) {
+  e.preventDefault();
+  
+  $n('#loading').show();
+  $n('#submit-btn').text('Enviando...');
+  
+  // Simular envío
+  setTimeout(() => {
+    $n('#loading').hide();
+    $n('#success-msg').show();
+    $n(this).hide();
+  }, 2000);
+});</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Ejemplo 2: Lista Dinámica -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-lg sm:text-xl quicksand-semibold text-gray-800 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🔍</span>
+                            Lista con Filtros
+                        </h3>
+                        <p class="text-gray-600 quicksand-regular mb-4 text-sm">
+                            Filtrado dinámico y manipulación de listas
+                        </p>
+                        <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                            <pre class="fira-code-regular text-xs text-gray-300 whitespace-pre-wrap"><code>// Filtrar lista en tiempo real
+$n('#search-input').on('input', function() {
+  const searchTerm = $n(this).val().toLowerCase();
+  
+  $n('.list-item').each((item) => {
+    const text = $n(item).text().toLowerCase();
+    const matches = text.includes(searchTerm);
+    
+    $n(item)
+      .toggleClass('hidden', !matches)
+      .css('opacity', matches ? '1' : '0.5');
+  });
+  
+  // Mostrar mensaje si no hay resultados
+  const visibleItems = $n('.list-item').not('.hidden');
+  $n('#no-results')
+    .toggleClass('hidden', visibleItems.length > 0);
+});
+
+// Agregar nuevo elemento
+$n('#add-btn').on('click', function() {
+  const newItem = $n('#new-item-input').val();
+  
+  if (newItem.trim()) {
+    $n('#items-list').append(`
+      &lt;div class="list-item p-2 border-b"&gt;
+        ${newItem}
+        &lt;button class="delete-btn text-red-500"&gt;×&lt;/button&gt;
+      &lt;/div&gt;
+    `);
+    
+    $n('#new-item-input').val('');
+  }
+});</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Ejemplo 3: Modal Dinámico -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-lg sm:text-xl quicksand-semibold text-gray-800 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🎭</span>
+                            Modal Dinámico
+                        </h3>
+                        <p class="text-gray-600 quicksand-regular mb-4 text-sm">
+                            Popup interactivo con animaciones y manejo de eventos
+                        </p>
+                        <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                            <pre class="fira-code-regular text-xs text-gray-300 whitespace-pre-wrap"><code>// Abrir modal con animación
+$n('.open-modal').on('click', function() {
+  const modalId = $n(this).data('modal');
+  
+  $n(`#${modalId}`)
+    .removeClass('hidden')
+    .css('opacity', '0')
+    .css('transform', 'scale(0.9)')
+    .css('opacity', '1')
+    .css('transform', 'scale(1)');
+});
+
+// Cerrar modal
+$n('.close-modal, .modal-overlay').on('click', function(e) {
+  if (e.target === this) {
+    $n('.modal')
+      .css('opacity', '0')
+      .css('transform', 'scale(0.9)');
+      
+    setTimeout(() => {
+      $n('.modal').addClass('hidden');
+    }, 200);
+  }
+});
+
+// Cerrar con tecla Escape
+$n(document).on('keydown', function(e) {
+  if (e.key === 'Escape') {
+    $n('.modal:not(.hidden) .close-modal').trigger('click');
+  }
+});</code></pre>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-8 sm:mt-12">
+                    <p class="text-sm sm:text-base text-gray-600 quicksand-regular px-4">
+                        Estos ejemplos muestran cómo nanots simplifica tareas comunes del desarrollo web con una sintaxis limpia y encadenamiento fluido.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <div class="flex justify-center items-center space-x-3 mb-4">
-                <div class="text-2xl">Ω</div>
-                <span class="quicksand-semibold">NanoJS</span>
+    <footer class="bg-gray-800 text-white py-6 sm:py-8">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <div class="flex justify-center items-center space-x-2 sm:space-x-3 mb-4">
+                <div class="text-xl sm:text-2xl">Ω</div>
+                <span class="quicksand-semibold text-sm sm:text-base">nanots</span>
             </div>
         </div>
     </footer>
 
     <script>
-        function copyToClipboard() {
-            const command = document.getElementById("npm-command").textContent;
-            const copyIcon = document.getElementById("copy-icon");
-            const checkIcon = document.getElementById("check-icon");
-            const button = document.querySelector(".copy-button");
+        function copyToClipboard(commandId, copyIconId, checkIconId) {
+            const command = document.getElementById(commandId).textContent;
+            const copyIcon = document.getElementById(copyIconId);
+            const checkIcon = document.getElementById(checkIconId);
+            const button = copyIcon.closest('button');
 
             navigator.clipboard
                 .writeText(command)
