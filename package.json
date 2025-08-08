@@ -1,6 +1,6 @@
 {
   "name": "nanots",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Una librería minimalista para el manejo eficiente del DOM",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,5 +19,8 @@
     "@swc/cli": "^0.7.8",
     "@swc/core": "^1.13.3",
     "typescript": "^5.9.2"
-  }
+  },
+  "files": [
+    "dist", "src", "README.md"
+  ]
 }
